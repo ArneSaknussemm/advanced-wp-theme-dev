@@ -32,6 +32,46 @@ class AQUILA_THEME {
 	public function setup_theme() {
 		add_theme_support( 'title-tag' );
 
+		add_theme_support( 'custom-logo', array(
+			'header-text'          => array( 'site-title', 'site-description' ),
+			'height'               => 100,
+			'width'                => 400,
+			'flex-height'          => true,
+			'flex-width'           => true,
+			'unlink-homepage-logo' => true, 
+		) );
+		
+		add_theme_support( 'custom-background', array( 
+			'default-color'		=> '0000ff',
+			'default-image'		=> '',
+			'default-repeat'	=> 'no-repeat',
+		) );
+
+		add_theme_support( 'post-thumbnails' );
+
+		// https://make.wordpress.org/core/2016/03/22/implementing-selective-refresh-support-for-widgets/
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
+		add_theme_support( 'automatic-feed-links' );
+
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'script',
+				'style',
+			)
+		);
+
+		add_editor_style();
+
+		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#default-block-styles
+		add_theme_support( 'wp-block-styles' );
+
 	}
 
  }
