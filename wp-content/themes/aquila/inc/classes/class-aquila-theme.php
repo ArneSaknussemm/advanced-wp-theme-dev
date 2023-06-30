@@ -30,6 +30,9 @@ class AQUILA_THEME {
 	}
 
 	public function setup_theme() {
+
+		// TODO Internationalization
+
 		add_theme_support( 'title-tag' );
 
 		add_theme_support( 'custom-logo', array(
@@ -71,6 +74,15 @@ class AQUILA_THEME {
 
 		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#default-block-styles
 		add_theme_support( 'wp-block-styles' );
+
+		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#wide-alignment
+		add_theme_support( 'align-wide' );
+
+		global $content_width;
+		if (! isset( $content_width ) ) {
+			$content_width = 1240;
+		}
+
 
 	}
 
