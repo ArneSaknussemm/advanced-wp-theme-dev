@@ -3,7 +3,7 @@
  * 
  */
 
- namespace Aquila_Theme\includes\traits;
+ namespace AQUILA_THEME\Inc\Traits;
 
  trait Singleton {
     public function __construct() {

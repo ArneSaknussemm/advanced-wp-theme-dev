@@ -12,3 +12,28 @@
 [29-Jun-2023 19:05:00 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 21
 [29-Jun-2023 19:05:00 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 21
 [29-Jun-2023 19:05:15 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 21
+[29-Jun-2023 23:02:46 UTC] PHP Warning:  Attempt to read property "title" on null in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jun-2023 23:02:48 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 21
+[29-Jun-2023 23:39:50 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 28
+[29-Jun-2023 23:40:11 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php on line 28
+[30-Jun-2023 00:37:07 UTC] PHP Fatal error:  Uncaught Error: Class "AQUILA_THEME\Inc\Assets" not found in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-aquila-theme.php:18
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\traits\trait-singleton.php(23): AQUILA_THEME\Inc\AQUILA_THEME->__construct()
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php(21): AQUILA_THEME\Inc\AQUILA_THEME::get_instance()
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\functions.php(24): aquila_get_theme_instance()
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-settings.php(591): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-config.php(108): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-blog-header.php(13): require_once('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\index.php(17): require('E:\\xampp\\htdocs...')
+#8 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-aquila-theme.php on line 18
+[30-Jun-2023 00:37:38 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:52:00 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:53:57 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:55:40 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:55:48 UTC] PHP Warning:  Attempt to read property "title" on null in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-customize-widgets.php on line 905
+[30-Jun-2023 00:55:49 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:56:05 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:56:05 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
+[30-Jun-2023 00:56:10 UTC] PHP Warning:  filemtime(): stat failed for E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/aquilaassets/main.js in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-assets.php on line 42
