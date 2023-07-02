@@ -53,6 +53,7 @@ class AQUILA_THEME {
 
 		add_theme_support( 'post-thumbnails' );
 
+		add_image_size( 'featured-thumbnail', 416, 257, true );
 		// https://make.wordpress.org/core/2016/03/22/implementing-selective-refresh-support-for-widgets/
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
