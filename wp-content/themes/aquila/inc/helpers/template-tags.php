@@ -23,9 +23,8 @@
 		get_post_thumbnail_id( $post_id ),
 		$size,
 		false,
-		$additional_attributes
+		$atributes
 	);
-	error_log( 'size: ' . print_r( $size, true ) );
 
 	return $custom_thumbnail;
 
