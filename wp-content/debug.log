@@ -270,3 +270,47 @@ Stack trace:
 #11 E:\xampp\htdocs\advanced-wp-theme-dev\index.php(17): require('E:\\xampp\\htdocs...')
 #12 {main}
   thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\template-parts\components\blog\entry-content.php on line 19
+[03-Jul-2023 23:26:34 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\kses.php on line 1729
+[05-Jul-2023 00:16:07 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class AQUILA_THEME\Inc\Sidebars does not have a method "register__sidebars" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\widgets.php(1854): do_action('widgets_init')
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-settings.php(623): do_action('init')
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\wp-config.php(108): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\advanced-wp-theme-dev\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\advanced-wp-theme-dev\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php on line 308
+[05-Jul-2023 00:16:09 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class AQUILA_THEME\Inc\Sidebars does not have a method "register__sidebars" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\widgets.php(1854): do_action('widgets_init')
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-settings.php(623): do_action('init')
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\wp-config.php(108): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\advanced-wp-theme-dev\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\advanced-wp-theme-dev\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php on line 308
+[05-Jul-2023 00:16:09 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class AQUILA_THEME\Inc\Sidebars does not have a method "register__sidebars" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\widgets.php(1854): do_action('widgets_init')
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): wp_widgets_init('')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-settings.php(623): do_action('init')
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\wp-config.php(108): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\advanced-wp-theme-dev\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\advanced-wp-theme-dev\wp-admin\admin.php(34): require_once('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\advanced-wp-theme-dev\wp-admin\edit.php(10): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php on line 308
