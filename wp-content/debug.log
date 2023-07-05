@@ -314,3 +314,307 @@ Stack trace:
 #10 E:\xampp\htdocs\advanced-wp-theme-dev\wp-admin\edit.php(10): require_once('E:\\xampp\\htdocs...')
 #11 {main}
   thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php on line 308
+[05-Jul-2023 15:29:42 UTC] PHP Warning:  Undefined array key "title" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 37
+[05-Jul-2023 15:29:42 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\formatting.php on line 2473
+[05-Jul-2023 15:29:43 UTC] PHP Warning:  Undefined array key "title" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 37
+[05-Jul-2023 15:29:43 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\formatting.php on line 2473
+[05-Jul-2023 15:30:11 UTC] PHP Warning:  Undefined array key "title" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 37
+[05-Jul-2023 15:30:11 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\formatting.php on line 2473
+[05-Jul-2023 15:30:11 UTC] PHP Warning:  Undefined array key "title" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 37
+[05-Jul-2023 15:30:11 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\formatting.php on line 2473
+[05-Jul-2023 15:42:46 UTC] ARGS: Array
+(
+    [name] => Sidebar
+    [id] => sidebar-1
+    [description] => Main Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-2" class="widget widget-sidebar widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-2
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:42:46 UTC] ARGS: Array
+(
+    [name] => Footer
+    [id] => sidebar-2
+    [description] => Footer Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-3" class="widget widget-footer cell column widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:43 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:43 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:44 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:44 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:47 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:47 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:55 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:55 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:56 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:57 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:57 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:57 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:58 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+)
+
+[05-Jul-2023 15:46:58 UTC] ARGS: Array
+(
+    [before_widget] => <div class="widget widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h2 class="widgettitle">
+    [after_title] => </h2>
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:59 UTC] ARGS: Array
+(
+    [name] => Sidebar
+    [id] => sidebar-1
+    [description] => Main Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-2" class="widget widget-sidebar widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-2
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:46:59 UTC] ARGS: Array
+(
+    [name] => Footer
+    [id] => sidebar-2
+    [description] => Footer Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-3" class="widget widget-footer cell column widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:47:00 UTC] ARGS: Array
+(
+    [name] => Sidebar
+    [id] => sidebar-1
+    [description] => Main Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-2" class="widget widget-sidebar widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-2
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:47:00 UTC] ARGS: Array
+(
+    [name] => Footer
+    [id] => sidebar-2
+    [description] => Footer Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-3" class="widget widget-footer cell column widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:47:03 UTC] ARGS: Array
+(
+    [name] => Sidebar
+    [id] => sidebar-1
+    [description] => Main Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-2" class="widget widget-sidebar widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-2
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 15:47:03 UTC] ARGS: Array
+(
+    [name] => Footer
+    [id] => sidebar-2
+    [description] => Footer Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-3" class="widget widget-footer cell column widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 16:05:07 UTC] ARGS: Array
+(
+    [name] => Sidebar
+    [id] => sidebar-1
+    [description] => Main Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-2" class="widget widget-sidebar widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-2
+    [widget_name] => Clock
+)
+
+[05-Jul-2023 16:05:07 UTC] ARGS: Array
+(
+    [name] => Footer
+    [id] => sidebar-2
+    [description] => Footer Sidebar
+    [class] => 
+    [before_widget] => <div id="clock_widget-3" class="widget widget-footer cell column widget_clock_widget">
+    [after_widget] => </div>
+    [before_title] => <h3 class="widget-title">
+    [after_title] => </h3>
+    [before_sidebar] => 
+    [after_sidebar] => 
+    [show_in_rest] => 
+    [widget_id] => clock_widget-3
+    [widget_name] => Clock
+)
+
