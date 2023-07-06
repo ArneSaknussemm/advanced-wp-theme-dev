@@ -34,7 +34,6 @@ class Clock_Widget extends WP_Widget{
 	 */
 	public function widget( $args, $instance ) {
 		extract( $args );
-		error_log('ARGS: ' . print_r($args, true));
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		
 		echo $before_widget;
