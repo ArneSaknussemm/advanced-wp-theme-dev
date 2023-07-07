@@ -26,17 +26,20 @@ if ( ! defined( 'AQUILA_BUILD_DIR_JS_PATH' ) ) {
 }
  
 if ( !defined( 'AQUILA_BUILD_IMG_URI' ) ) {
-   define( 'AQUILA_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . 'assets/build/src/img' );
+   define( 'AQUILA_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/src/img' );
 }
 
 if ( !defined( 'AQUILA_BUILD_CSS_URI' ) ) {
-   define( 'AQUILA_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . 'assets/build/css' );
+   define( 'AQUILA_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/css' );
 }
 
-if ( ! defined( 'AQUILA_BUIILD_DIR_CSS_PATH' ) ) {
-	define ( 'AQUILA_BUIILD_DIR_CSS_PATH', untrailingslashit( get_template_directory() ) . 'assets/build/css' );
+if ( ! defined( 'AQUILA_BUILD_DIR_CSS_PATH' ) ) {
+	define ( 'AQUILA_BUILD_DIR_CSS_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/css' );
 }
 
+if ( ! defined( 'AQUILA_BUILD_LIB_URI' ) ) {
+	define( 'AQUILA_BUILD_LIB_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/library' );
+}
 
 require_once AQUILA_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once AQUILA_DIR_PATH . '/inc/helpers/template-tags.php';
