@@ -21,20 +21,20 @@ if ( !defined( 'AQUILA_BUILD_JS_URI' ) ) {
    define( 'AQUILA_BUILD_JS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build/js' );
 }
 
-if ( ! defined( 'AQUILA_DIR_JS_PATH' ) ) {
-	define ( 'AQUILA_DIR_JS_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/js' );
+if ( ! defined( 'AQUILA_BUILD_DIR_JS_PATH' ) ) {
+	define ( 'AQUILA_BUILD_DIR_JS_PATH', untrailingslashit( get_template_directory() ) . '/assets/build/js' );
 }
  
 if ( !defined( 'AQUILA_BUILD_IMG_URI' ) ) {
-   define( 'AQUILA_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . '/build/src/img' );
+   define( 'AQUILA_BUILD_IMG_URI', untrailingslashit( get_template_directory_uri() ) . 'assets/build/src/img' );
 }
 
 if ( !defined( 'AQUILA_BUILD_CSS_URI' ) ) {
-   define( 'AQUILA_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . '/build/css' );
+   define( 'AQUILA_BUILD_CSS_URI', untrailingslashit( get_template_directory_uri() ) . 'assets/build/css' );
 }
 
-if ( ! defined( 'AQUILA_DIR_CSS_PATH' ) ) {
-	define ( 'AQUILA_DIR_CSS_PATH', untrailingslashit( get_template_directory() ) . '/build/css' );
+if ( ! defined( 'AQUILA_BUIILD_DIR_CSS_PATH' ) ) {
+	define ( 'AQUILA_BUIILD_DIR_CSS_PATH', untrailingslashit( get_template_directory() ) . 'assets/build/css' );
 }
 
 
