@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress && npm run pot",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
-	"clean": "rm -rf build/*"
+    "clean": "rm -rf build/*"
   },
   "keywords": [
     "worpress",
@@ -24,12 +24,16 @@
     "@babel/preset-react": "^7.22.5",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "cssnano": "^6.0.1",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "sass-mq": "^5.0.1",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.1",
