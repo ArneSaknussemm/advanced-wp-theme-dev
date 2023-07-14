@@ -1,24 +1,17 @@
 <?php
 /**
- * Autoloader file for plugin.
+ * Autoloader file for theme
  * 
- * @package Aquila
+ * @package Sagitario
  */
 
- namespace AQUILA_THEME\Inc\Helpers;
+namespace SAGITARIO\Inc\Helpers;
 
-/**
- * Auto loader function
- * 
- * @param string $resource Source namespace.
- * 
- * @return void
- */
 function autoloader( $resource = '' ) {
     $resource_path  = false;
-    $namespace_root = 'AQUILA_THEME\\';
+    $namespace_root = 'SAGITARIO\\';
     $resource       = trim( $resource, '\\') ;
-	error_log('RESOURCE: ' . print_r($resource, true));
+	//error_log('RESOURCE: ' . print_r($resource, true));
 	
     if ( empty( $resource ) || strpos( $resource, '\\' ) === false || strpos( $resource, $namespace_root ) !== 0 ) {
         // Not our namespace, bail out.
@@ -32,7 +25,7 @@ function autoloader( $resource = '' ) {
 		'\\',
         str_replace( '_', '-', strtolower( $resource ) )
     );
-	error_log('PATH: ' . print_r($path, true));
+	//error_log('PATH: ' . print_r($path, true));
     
     /**
      * Time to determine which type of resource path it is,
@@ -70,7 +63,8 @@ function autoloader( $resource = '' ) {
                 break;
         }
 
-        $resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( AQUILA_DIR_PATH ), $directory, $file_name );
+        $resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( SAGITARIO_DIR_PATH ), $directory, $file_name );
+		//error_log('RESOURCE PATH: ' . print_r($resource_path, true));
         
     }
 
@@ -86,4 +80,4 @@ function autoloader( $resource = '' ) {
 
 }
 
-spl_autoload_register( '\AQUILA_THEME\Inc\Helpers\autoloader' );
+spl_autoload_register( '\SAGITARIO\Inc\Helpers\autoloader' );

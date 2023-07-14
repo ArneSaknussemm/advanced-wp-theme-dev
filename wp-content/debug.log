@@ -1,0 +1,94 @@
+[14-Jul-2023 16:19:04 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:19:04 UTC] ACTIONS DONE
+[14-Jul-2023 16:19:04 UTC] ASSETS LOADED
+[14-Jul-2023 16:21:04 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:21:04 UTC] ACTIONS DONE
+[14-Jul-2023 16:21:04 UTC] ASSETS LOADED
+[14-Jul-2023 16:23:04 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:23:04 UTC] ACTIONS DONE
+[14-Jul-2023 16:23:04 UTC] ASSETS LOADED
+[14-Jul-2023 16:34:56 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:34:56 UTC] ACTIONS DONE
+[14-Jul-2023 16:34:56 UTC] ASSETS LOADED
+[14-Jul-2023 16:34:56 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:34:56 UTC] ACTIONS DONE
+[14-Jul-2023 16:34:56 UTC] ASSETS LOADED
+[14-Jul-2023 16:34:56 UTC] STYLES LOADED: 
+[14-Jul-2023 16:34:56 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 16:34:56 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 16:36:54 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:36:54 UTC] ACTIONS DONE
+[14-Jul-2023 16:36:54 UTC] ASSETS LOADED
+[14-Jul-2023 16:36:54 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SAGITARIO\Inc\AQUILA_BUILD_LIB_URI" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\inc\classes\class-assets.php:33
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): SAGITARIO\Inc\Assets->register_styles('')
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\script-loader.php(2194): do_action('wp_enqueue_scri...')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): wp_enqueue_scripts('')
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\general-template.php(3049): do_action('wp_head')
+#8 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\header.php(13): wp_head()
+#9 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template.php(783): require_once('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template.php(718): load_template('E:\\xampp\\htdocs...', true, Array)
+#11 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\index.php(3): get_header()
+#13 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\advanced-wp-theme-dev\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\advanced-wp-theme-dev\index.php(17): require('E:\\xampp\\htdocs...')
+#16 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\inc\classes\class-assets.php on line 33
+[14-Jul-2023 16:44:39 UTC] MAIN CLASS LOADED
+[14-Jul-2023 16:44:39 UTC] ACTIONS DONE
+[14-Jul-2023 16:44:39 UTC] ASSETS LOADED
+[14-Jul-2023 16:44:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SAGITARIO\Inc\AQUILA_BUILD_LIB_URI" in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\inc\classes\class-assets.php:33
+Stack trace:
+#0 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): SAGITARIO\Inc\Assets->register_styles('')
+#1 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\script-loader.php(2194): do_action('wp_enqueue_scri...')
+#4 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(308): wp_enqueue_scripts('')
+#5 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\general-template.php(3049): do_action('wp_head')
+#8 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\header.php(13): wp_head()
+#9 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template.php(783): require_once('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template.php(718): load_template('E:\\xampp\\htdocs...', true, Array)
+#11 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\index.php(3): get_header()
+#13 E:\xampp\htdocs\advanced-wp-theme-dev\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\advanced-wp-theme-dev\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\advanced-wp-theme-dev\index.php(17): require('E:\\xampp\\htdocs...')
+#16 {main}
+  thrown in E:\xampp\htdocs\advanced-wp-theme-dev\wp-content\themes\sagitario\inc\classes\class-assets.php on line 33
+[14-Jul-2023 17:02:49 UTC] MAIN CLASS LOADED
+[14-Jul-2023 17:02:49 UTC] ACTIONS DONE
+[14-Jul-2023 17:02:49 UTC] ASSETS LOADED
+[14-Jul-2023 17:02:49 UTC] STYLES LOADED: 
+[14-Jul-2023 17:02:49 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:02:49 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:02:49 UTC] MAIN CLASS LOADED
+[14-Jul-2023 17:02:49 UTC] ACTIONS DONE
+[14-Jul-2023 17:02:49 UTC] ASSETS LOADED
+[14-Jul-2023 17:02:49 UTC] STYLES LOADED: 
+[14-Jul-2023 17:02:49 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:02:49 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:03:17 UTC] MAIN CLASS LOADED
+[14-Jul-2023 17:03:17 UTC] ACTIONS DONE
+[14-Jul-2023 17:03:17 UTC] ASSETS LOADED
+[14-Jul-2023 17:03:17 UTC] STYLES LOADED: 
+[14-Jul-2023 17:03:17 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:03:17 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:03:33 UTC] MAIN CLASS LOADED
+[14-Jul-2023 17:03:33 UTC] ACTIONS DONE
+[14-Jul-2023 17:03:33 UTC] ASSETS LOADED
+[14-Jul-2023 17:03:33 UTC] STYLES LOADED: 
+[14-Jul-2023 17:03:33 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:03:33 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:04:06 UTC] MAIN CLASS LOADED
+[14-Jul-2023 17:04:06 UTC] ACTIONS DONE
+[14-Jul-2023 17:04:06 UTC] ASSETS LOADED
+[14-Jul-2023 17:04:06 UTC] STYLES LOADED: 
+[14-Jul-2023 17:04:06 UTC] E:\xampp\htdocs\advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
+[14-Jul-2023 17:04:06 UTC] http://localhost/advanced-wp-theme-dev/wp-content/themes/sagitario/style.css
