@@ -6,55 +6,82 @@
  */
 ?>
 
-<header>
-	<?php
-	if ( function_exists( 'the_custom_logo' ) ) {
-		the_custom_logo();
-	}	
-	?>	
-	<h1>HOLA</h1>
-	<?php
+
+<?php
+if ( function_exists( 'the_custom_logo' ) ) {
+	the_custom_logo();
+}	
+?>	
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<?php
+		function cocoloco($classes, $menu_item, $args, $depth) {
+			
+			if ('sagitario-header-menu' === $args->theme_location ) {
+				$classes[] = 'nav-item';
+				if ( in_array('menu-item-has-children', $menu_item->classes) ) {
+					$classes[] = 'dropdown';
+				}
+			}
+			return $classes;
+		}
+		add_filter( 'nav_menu_css_class' , 'cocoloco', 10, 4 );
+		
+		function locococo($atts, $menu_item, $args, $depth) {
+			
+			if ( 'sagitario-header-menu' === $args->theme_location ) {
+				$atts['class'] = 'nav-link';
+				if ( in_array('menu-item-has-children', $menu_item->classes) )
+				{
+					$atts['class'] = 'nav-link dropdown-toggle';
+					$atts['role'] = 'button';
+					$atts['data-bs-toggle'] = 'dropdown';
+					$atts['aria-expanded'] = 'false';
+				}
+			}
+			return $atts;
+		}
+		add_filter( 'nav_menu_link_attributes', 'locococo', 10, 4 );
+
+		function polopolo($classes, $args, $depth) {
+			
+			if ( 'sagitario-header-menu' === $args->theme_location ) {
+				$classes['class'] = 'dropdown-menu';
+			}
+			return $classes;
+		}
+		add_filter( 'nav_menu_submenu_css_class', 'polopolo', 10, 3 );
+
 		wp_nav_menu(
 			array(
-			'theme_location'	=> 'aquila-header-menu',
-			'container_class'	=> 'my_extra_menu_class'
+				//'menu'				=> '',
+				'menu_class'		=> 'navbar-nav me-auto mb-2 mb-lg-0',
+				//'menu_id'			=> 'aver-id',
+				//'container'			=> 'div',
+				'container_class'	=> 'collapse navbar-collapse',
+				'container_id'		=> 'navbarSupportedContent',
+				//'before'			=> 'before',
+				//'after'				=> 'after',
+				//'link_before'		=> 'lb' ,
+				//'link_after'		=> ' la',
+				//'echo'				=> true,
+				//'walker'			=> '',
+				'theme_location'	=> 'sagitario-header-menu',
+				'items_wrap'		=> '<ul id="%1$s" class="%2$s">%3$s</ul>		<form class="d-flex" role="search">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>'
+
+
 			)
 		);
-	?>
+		?>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#">Navbar</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		<li class="nav-item active">
-			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Dropdown
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="#">Action</a>
-			<a class="dropdown-item" href="#">Another action</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="#">Something else here</a>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-		</li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
 	</div>
-	</nav>
-</header>
+</nav>
+
+

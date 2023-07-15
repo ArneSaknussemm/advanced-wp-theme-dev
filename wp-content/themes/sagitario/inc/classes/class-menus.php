@@ -21,6 +21,7 @@ class Menus {
 		/**
 		 * Actions
 		 */
+		add_action( 'init', array( $this, 'register_menus' ) );
 
 	}
 
