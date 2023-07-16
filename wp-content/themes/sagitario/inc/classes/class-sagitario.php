@@ -14,11 +14,12 @@ class SAGITARIO {
 
 	protected function __construct() {
 		//load class
-		error_log('MAIN CLASS LOADED');
 		Assets::get_instance();
 		Menus::get_instance();
-
+		Sidebars::get_instance();
+		
 		$this->setup_hooks();
+		error_log('MAIN CLASS LOADED');
 	}
 
 	protected function setup_hooks() {

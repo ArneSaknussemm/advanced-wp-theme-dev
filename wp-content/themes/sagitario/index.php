@@ -3,22 +3,28 @@
 get_header();
 
 ?>
-<main>
-	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) : the_post();
-			?>
-			<article>
-				<?php
-				the_title( '<h2>', '</h2>' );
-				the_post_thumbnail( 'featured-thumbnail');
-				the_excerpt();
-				?>
-			</article>
+<main class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-8 co-sm-12">
 			<?php
-		endwhile;
-	endif;
-	?>
+			if (have_posts()) {
+
+				?>
+				<section class="row row-cols-1 row-cols-md-3 g-4">
+				<?php
+				while ( have_posts() ) : the_post();
+					get_template_part('template-parts/content');
+					
+				endwhile;
+				?>
+				</section>
+		</div>
+		<div class="col-lg-4 col-md-4 co-sm-12">
+			<?php
+			get_sidebar();
+			}
+			?>
+	</div>
 </main>
 <?php
 

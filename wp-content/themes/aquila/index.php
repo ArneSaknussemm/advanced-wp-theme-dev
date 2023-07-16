@@ -28,10 +28,10 @@ get_header();
 					$index = 0;
 					$no_of_columns = 3;
 
-    					while ( have_posts() ) : the_post();
+						while ( have_posts() ) : the_post();
 							if ( 0 === $index % $no_of_columns ) {
 								?>
-									<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="col-lg-4 col-md-6 col-sm-12">
 								<?php
 							}
 
@@ -41,7 +41,7 @@ get_header();
 
 							if (0 === $index % $no_of_columns ) {
 								?>
-									</div>
+								</div>
 								<?php
 							}
 						endwhile;
