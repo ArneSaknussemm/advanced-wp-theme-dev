@@ -40,6 +40,8 @@ class SAGITARIO {
 			'unlink-homepage-logo' => true, 
 		) );
 
+		add_theme_support( 'post-thumbnails' );
+		
 		add_image_size( 'featured-thumbnail', 416, 257, true );
 	}
 

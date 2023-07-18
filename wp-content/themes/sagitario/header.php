@@ -12,13 +12,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class( 'grid-container' ); ?> >
 	<?php
 	if (function_exists( 'wp_body_open' ) ) {
 		wp_body_open();
 	}
 	?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="site-header">
 		<?php get_template_part('template-parts/header/nav'); ?>
 	</header>
 	

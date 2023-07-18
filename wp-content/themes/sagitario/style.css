@@ -21,3 +21,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	width:120px;
 	height: auto;
 }
+img
+{
+	width: 100%;
+	height: auto;
+}
+
+body.grid-container {
+	display: grid;
+	grid-template-areas:
+	'header	header	header	header	header	header'
+	'aside	main	main	main	main	main'
+	'aside	footer	footer	footer	footer	footer';
+}
+body.grid-container > header {
+	grid-area: header;
+}
+body.grid-container > main {
+	grid-area: main;
+}
+body.grid-container > aside {
+	grid-area: aside;
+}
+body.grid-container > footer {
+	grid-area: footer;
+}

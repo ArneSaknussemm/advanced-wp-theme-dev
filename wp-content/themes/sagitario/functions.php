@@ -23,3 +23,5 @@ function sagitario_get_theme_instance() {
 
 }
 sagitario_get_theme_instance();
+
+remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
