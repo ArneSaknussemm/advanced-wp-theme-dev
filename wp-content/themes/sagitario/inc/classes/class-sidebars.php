@@ -23,7 +23,7 @@ use SAGITARIO\Inc\Traits\Singleton;
 		 * Actions
 		 */
 		add_action( 'widgets_init', array( $this, 'register_sidebars' ) );
-		//add_action( 'widgets_init', array( $this, 'register_clock_widget' ) );
+		add_action( 'widgets_init', array( $this, 'register_clock_widget' ) );
 	}
 
 	public function register_sidebars() {

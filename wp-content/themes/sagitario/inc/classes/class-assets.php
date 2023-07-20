@@ -30,20 +30,24 @@ class Assets {
 
 	public function register_styles() {
 		// Register styles.
-		wp_register_style( 'style-css', SAGITARIO_DIR_URI . '/style.css', array(), filemtime( SAGITARIO_DIR_PATH . '/style.css' ), 'all' );
-		wp_register_style( 'bootstrap-css', SAGITARIO_ASSETS_URI . '/bootstrap/css/bootstrap.min.css', array(), false, 'all' );
-		wp_enqueue_style( 'bootstrap-css' );
+		wp_register_style( 'main', SAGITARIO_ASSETS_BUILD_URI . '/css/main.css', array('bootstrap'), filemtime( SAGITARIO_ASSETS_BUILD_URI . '/css/main.css' ), 'all' );
+		wp_register_style( 'bootstrap', SAGITARIO_ASSETS_BUILD_URI . '/bootstrap/css/bootstrap.min.css', array(), false, 'all' );
+		wp_register_style( 'fonts', SAGITARIO_ASSETS_URI . '/css/fonts.css', array(), false, 'all' );
 
-		wp_enqueue_style( 'style-css' );
+		wp_enqueue_style( 'main' );
+		wp_enqueue_style( 'bootstrap' );
+		wp_enqueue_style( 'fonts' );
 		error_log( 'STYLES LOADED: ');
-		error_log( print_r(SAGITARIO_DIR_PATH . '/style.css', true));
-		error_log( print_r(SAGITARIO_DIR_URI . '/style.css', true));
 	}
 	
 	public function register_scripts() {
 		
-		wp_register_script( 'bootstrap-js', SAGITARIO_ASSETS_URI . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), false, false );
-		wp_enqueue_script( 'bootstrap-js' );
+		wp_register_script( 'main', SAGITARIO_ASSETS_BUILD_URI . '/js/main.js', array('jquery'), false, false );
+		error_log( print_r('COCO: ' . SAGITARIO_ASSETS_BUILD_URI . '/js/clock-widget.js', true));
+		wp_register_script( 'bootstrap', SAGITARIO_ASSETS_URI . '/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), false, false );
+		
+		wp_enqueue_script( 'main' );
+		wp_enqueue_script( 'bootstrap' );
 		error_log( 'SCRIPTS LOADED: ');
 	}
 

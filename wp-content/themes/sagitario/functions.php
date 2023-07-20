@@ -14,6 +14,12 @@ if ( ! defined( 'SAGITARIO_DIR_URI' ) ) {
 if ( ! defined( 'SAGITARIO_ASSETS_URI' ) ) {
 	define ( 'SAGITARIO_ASSETS_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/src' );
 }
+if ( ! defined( 'SAGITARIO_ASSETS_BUILD_URI' ) ) {
+	define ( 'SAGITARIO_ASSETS_BUILD_URI', untrailingslashit( get_template_directory_uri() ) . '/assets/build' );
+}
+if ( ! defined( 'SAGITARIO_ASSETS_BUILD_PATH' ) ) {
+	define ( 'SAGITARIO_ASSETS_BUILD_PATH', untrailingslashit( get_template_directory() ) . '/assets/build' );
+}
 
 require_once SAGITARIO_DIR_PATH . '/inc/helpers/autoloader.php';
 

@@ -1,0 +1,31 @@
+body {
+	background-color: #ddd;
+}
+
+body.post-template-default {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr 8fr 1fr;
+	grid-template-areas:
+	'aside	header	header	header	header	header'
+	'aside	main	main	main	main	main'
+	'aside	footer	footer	footer	footer	footer';
+	padding: 0 10rem;
+}
+body.post-template-default > header {
+	grid-area: header;
+}
+body.post-template-default > main {
+	grid-area: main;
+	padding: 1rem;
+	background-color: #fff;
+}
+body.post-template-default > aside {
+	grid-area: aside;
+	padding: 1rem;
+	background-color: #fff;
+}
+body.post-template-default > footer {
+	grid-area: footer;
+	background-color: #f8f9fa;
+}
