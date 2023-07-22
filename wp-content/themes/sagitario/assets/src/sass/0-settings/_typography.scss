@@ -4,10 +4,10 @@
 ------------------*/
 
 // Global theme font.
-$font__main: sans-serif;
+$font__main: 'Style Script', sans-serif;
 
 // Global code font
-$font__code: sans-serif, monospace;
+$font__code: 'Style Script', sans-serif, monospace;
 
 // Fallback font when font is not loaded via WebFonts JS.
 $font__fallback: sans-serif;
@@ -62,7 +62,7 @@ $body-text: (
 			line-height: 1.43,
 		),
 		'large': (
-				font-size: 15px,
+				font-size: 18px,
 				line-height: 1.43,
 		),
 	),

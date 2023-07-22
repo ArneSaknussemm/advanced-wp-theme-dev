@@ -22,6 +22,7 @@ const BUILD_DIR = path.resolve( __dirname, 'build' );
 const entry = {
 	main: JS_DIR + '/main.js',
 	single: JS_DIR + '/single.js',
+	editor: JS_DIR + '/editor.js',
 };
 const output = {
 	path: BUILD_DIR,
@@ -57,15 +58,23 @@ const rules = [
 	},
 	{
 		test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+		type: 'asset/resource',
 		exclude: [ IMG_DIR, /node_modules/ ],
-		use: {
-			loader: 'file-loader',
-			options: {
-				name: '[path][name].[ext]',
-				publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+/* 		use: [
+			{
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]',
+					publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+				}
 			}
-		}
+		], */
+		generator: {
+			filename: '[path][name][ext]',
+		},
 	}
+
+
 ];
 
 const plugins = ( argv ) => [

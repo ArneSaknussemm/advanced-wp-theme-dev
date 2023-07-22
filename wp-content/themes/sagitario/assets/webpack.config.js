@@ -52,14 +52,20 @@ const rules = [
 	},
 	{
 		test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+		type: 'asset/resource',
 		exclude: [ IMG_DIR, /node_modules/ ],
-		use: {
-			loader: 'file-loader',
-			options: {
-				name: '[path][name].[ext]',
-				publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+/* 		use: [
+			{
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]',
+					publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+				}
 			}
-		}
+		], */
+		generator: {
+			filename: '[path][name][ext]',
+		},
 	}
 
 ];

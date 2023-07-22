@@ -51,7 +51,9 @@ function aquila_get_theme_instance() {
 
 aquila_get_theme_instance();
 
-function aquila_enqueue_scripts() {
-
- }
- 
+function estilos_gutenberg() {
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'wp-block-style' );
+}
+add_action( 'wp_enqueue_scripts', 'estilos_gutenberg', 100 );

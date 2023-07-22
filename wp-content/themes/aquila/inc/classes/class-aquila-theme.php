@@ -19,6 +19,7 @@ class AQUILA_THEME {
 		Menus::get_instance();
 		Meta_boxes::get_instance();
 		Sidebars::get_instance();
+		Block_Patterns::get_instance();
 
 		$this->setup_hooks();
 	}
@@ -74,13 +75,19 @@ class AQUILA_THEME {
 			)
 		);
 
-		add_editor_style();
+		add_editor_style('assets\build\css\editor.css');
+
+		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#wide-alignment
+		add_theme_support( 'align-wide' );
+		
+		add_theme_support( 'editor-styles' );
 
 		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#default-block-styles
 		add_theme_support( 'wp-block-styles' );
 
-		// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#wide-alignment
-		add_theme_support( 'align-wide' );
+		// remove core clock patterns
+
+		remove_theme_support( 'core-block-patterns' );
 
 		global $content_width;
 		if (! isset( $content_width ) ) {
