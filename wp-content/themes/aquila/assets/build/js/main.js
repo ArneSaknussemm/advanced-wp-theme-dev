@@ -63,18 +63,6 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 
 /***/ }),
 
-/***/ "./src/img/cat.png":
-/*!*************************!*\
-  !*** ./src/img/cat.png ***!
-  \*************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("../../src/img/cat.png");
-
-/***/ }),
-
 /***/ "./src/sass/main.scss":
 /*!****************************!*\
   !*** ./src/sass/main.scss ***!
@@ -85,6 +73,28 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/img/casas-valparaiso-bn-1920x1080-tinyfied.jpg":
+/*!************************************************************!*\
+  !*** ./src/img/casas-valparaiso-bn-1920x1080-tinyfied.jpg ***!
+  \************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/img/casas-valparaiso-bn-1920x1080-tinyfied.jpg";
+
+/***/ }),
+
+/***/ "./src/img/cat.png":
+/*!*************************!*\
+  !*** ./src/img/cat.png ***!
+  \*************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "src/img/cat.png";
 
 /***/ })
 
@@ -139,6 +149,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	}();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
@@ -155,6 +177,29 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	}();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	!function() {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl + "../";
+/******/ 	}();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -168,12 +213,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
 /* harmony import */ var _img_cat_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/cat.png */ "./src/img/cat.png");
+/* harmony import */ var _img_casas_valparaiso_bn_1920x1080_tinyfied_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/casas-valparaiso-bn-1920x1080-tinyfied.jpg */ "./src/img/casas-valparaiso-bn-1920x1080-tinyfied.jpg");
 
 
 // Styles
 
 
 // Images.
+
 
 }();
 /******/ })()

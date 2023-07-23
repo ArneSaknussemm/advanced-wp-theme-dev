@@ -1,6 +1,6 @@
 <?php
 /**
- * The templante part for displayuing a message that post cannot be found
+ * The templante part for displaying a message that post cannot be found
  * 
  * @package Aquila
  */
